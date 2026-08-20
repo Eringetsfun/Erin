@@ -1,0 +1,488 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>李颖玲 - 创意作品集</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root{--primary:#6C63FF;--primary-light:#8B83FF;--primary-dark:#4A42E0;--secondary:#F8F9FA;--accent:#FF6B6B;--accent-warm:#FF9A76;--accent-cool:#4ECDC4;--gradient-primary:linear-gradient(135deg,#6C63FF 0%,#4ECDC4 100%);--gradient-accent:linear-gradient(135deg,#FF6B6B 0%,#FF9A76 100%);--text:#2D3748;--text-light:#4A5568;--text-muted:#718096;--white:#FFFFFF;--glass-bg:rgba(255,255,255,0.8);--glass-border:rgba(255,255,255,0.2);--shadow-sm:0 2px 4px rgba(0,0,0,0.05);--shadow-md:0 4px 6px rgba(0,0,0,0.1);--shadow-lg:0 10px 15px rgba(0,0,0,0.1);--shadow-xl:0 20px 25px rgba(0,0,0,0.15);--transition:all 0.3s cubic-bezier(0.25,0.46,0.45,0.94);--radius-sm:8px;--radius-md:12px;--radius-lg:16px;--radius-xl:24px}*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:'Noto Sans SC',sans-serif;line-height:1.6;color:var(--text);background-color:var(--white)}.container{max-width:1200px;margin:0 auto;padding:0 20px}.section{padding:100px 0}.section-title{text-align:center;font-size:2.5rem;margin-bottom:20px;color:var(--text);position:relative}.section-title::after{content:'';display:block;width:60px;height:4px;background:var(--primary);margin:15px auto 0;border-radius:2px}.section-description{text-align:center;font-size:1.1rem;color:var(--text-muted);margin-bottom:50px}.navbar{position:fixed;top:0;width:100%;background:var(--glass-bg);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--glass-border);box-shadow:var(--shadow-sm);z-index:1000;transition:var(--transition)}.nav-container{max-width:1200px;margin:0 auto;padding:0 20px;display:flex;justify-content:space-between;align-items:center;height:80px}.logo{font-size:1.8rem;font-weight:900;background:var(--gradient-primary);-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-decoration:none}.nav-menu{display:flex;gap:40px;list-style:none}.nav-link{color:var(--text);text-decoration:none;font-weight:500;transition:var(--transition);position:relative}.nav-link::after{content:'';position:absolute;bottom:-5px;left:0;width:0;height:3px;background:var(--primary);transition:var(--transition)}.nav-link:hover::after,.nav-link.active::after{width:100%}.nav-link:hover{color:var(--primary)}.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer}.bar{width:25px;height:3px;background:var(--text);transition:var(--transition)}.hero{min-height:100vh;display:flex;align-items:center;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);position:relative;overflow:hidden}.hero-content{position:relative;z-index:10;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;padding:120px 5%;max-width:1200px;margin:0 auto}.hero-text{color:#fff}.hero-badge{display:inline-block;padding:10px 24px;background:rgba(255,255,255,0.1);backdrop-filter:blur(10px);border-radius:50px;font-size:0.9rem;margin-bottom:30px;border:1px solid rgba(255,255,255,0.2)}.hero-title{font-size:3.5rem;font-weight:900;line-height:1.1;margin-bottom:20px}.hero-title .hl{background:var(--gradient-accent);-webkit-background-clip:text;-webkit-text-fill-color:transparent}.hero-sub{font-size:1.3rem;color:rgba(255,255,255,0.8);margin-bottom:30px;font-weight:300}.hero-btns{display:flex;gap:20px}.btn{padding:16px 32px;border-radius:50px;font-weight:600;text-decoration:none;transition:var(--transition);border:none;font-size:1rem}.btn-primary{background:var(--gradient-primary);color:#fff;box-shadow:0 10px 30px rgba(102,126,234,0.4)}.btn-primary:hover{transform:translateY(-3px);box-shadow:0 15px 40px rgba(102,126,234,0.5)}.btn-secondary{background:rgba(255,255,255,0.1);color:#fff;border:2px solid rgba(255,255,255,0.3);backdrop-filter:blur(10px)}.btn-secondary:hover{background:#fff;color:var(--primary)}.about{background:var(--secondary)}.about-content{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.about-img{width:100%;height:400px;background:var(--gradient-primary);border-radius:20px;overflow:hidden;box-shadow:var(--shadow-xl)}.about-img img{width:100%;height:100%;object-fit:cover}.about-text h3{font-size:1.8rem;font-weight:700;margin-bottom:15px;color:var(--text)}.about-text p{color:var(--text-light);line-height:1.8;margin-bottom:20px}.about-text ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px}.about-text ul li{padding:12px 16px;background:var(--white);border-radius:var(--radius-md);box-shadow:var(--shadow-sm);transition:var(--transition)}.about-text ul li:hover{transform:translateX(5px);box-shadow:var(--shadow-md)}.experience{background:var(--white)}.timeline{position:relative;max-width:800px;margin:0 auto}.timeline::before{content:'';position:absolute;left:50%;transform:translateX(-50%);width:4px;height:100%;background:var(--gradient-primary);border-radius:2px}.timeline-item{position:relative;margin-bottom:60px;display:flex;justify-content:flex-end;padding-right:calc(50% + 30px)}.timeline-item:nth-child(even){justify-content:flex-start;padding-right:0;padding-left:calc(50% + 30px)}.timeline-content{background:var(--white);padding:25px;border-radius:var(--radius-lg);box-shadow:var(--shadow-lg);position:relative;transition:var(--transition);max-width:450px}.timeline-content:hover{transform:translateY(-5px);box-shadow:var(--shadow-xl)}.timeline-date{display:inline-block;padding:6px 16px;background:var(--gradient-primary);color:#fff;border-radius:20px;font-size:0.85rem;font-weight:600;margin-bottom:15px}.timeline-company{font-size:1.2rem;font-weight:700;color:var(--text);margin-bottom:5px}.timeline-role{font-size:0.95rem;color:var(--primary);font-weight:600;margin-bottom:15px}.timeline-desc{color:var(--text-light);font-size:0.9rem;line-height:1.7}.timeline-desc strong{color:var(--text);font-weight:600}.skills{background:var(--secondary)}.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px}.skill-card{background:var(--white);padding:40px 30px;border-radius:var(--radius-xl);text-align:center;box-shadow:var(--shadow-md);transition:var(--transition);position:relative;overflow:hidden}.skill-card:hover{transform:translateY(-10px);box-shadow:var(--shadow-xl)}.skill-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:var(--gradient-primary)}.skill-icon{font-size:3rem;margin-bottom:20px}.skill-card h3{font-size:1.3rem;font-weight:700;margin-bottom:15px;color:var(--text)}.skill-card p{color:var(--text-light);font-size:0.9rem;line-height:1.7}.portfolio{background:var(--white)}.portfolio-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px}.portfolio-item{background:var(--secondary);border-radius:var(--radius-xl);overflow:hidden;box-shadow:var(--shadow-md);transition:var(--transition);cursor:pointer}.portfolio-item:hover{transform:translateY(-10px);box-shadow:var(--shadow-xl)}.portfolio-img{width:100%;height:200px;background:var(--gradient-primary);overflow:hidden;position:relative}.portfolio-img img{width:100%;height:100%;object-fit:cover;transition:var(--transition)}.portfolio-item:hover .portfolio-img img{transform:scale(1.1)}.portfolio-info{padding:25px}.portfolio-info h3{font-size:1.2rem;font-weight:700;margin-bottom:10px;color:var(--text)}.portfolio-info p{color:var(--text-muted);font-size:0.9rem}.contact{background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:#fff}.contact .section-title{color:#fff}.contact .section-title::after{background:#fff}.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;margin-top:50px}.contact-card{background:rgba(255,255,255,0.1);backdrop-filter:blur(10px);padding:40px 30px;border-radius:var(--radius-xl);text-align:center;border:1px solid rgba(255,255,255,0.2);transition:var(--transition)}.contact-card:hover{background:rgba(255,255,255,0.15);transform:translateY(-5px)}.contact-icon{font-size:2.5rem;margin-bottom:20px}.contact-card h3{font-size:1.2rem;font-weight:700;margin-bottom:10px}.contact-card p{color:rgba(255,255,255,0.8);font-size:0.95rem}.footer{background:var(--text);color:rgba(255,255,255,0.6);text-align:center;padding:30px 20px}.modal-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.8);z-index:2000;display:none;align-items:center;justify-content:center}.modal-overlay.active{display:flex}.modal-content{background:var(--white);border-radius:var(--radius-xl);max-width:900px;width:90%;max-height:90vh;overflow-y:auto;position:relative}.modal-close{position:absolute;top:20px;right:20px;width:40px;height:40px;border-radius:50%;background:var(--secondary);border:none;cursor:pointer;font-size:1.2rem;z-index:10}.modal-close:hover{background:var(--accent);color:#fff}.modal-header{padding:30px;border-bottom:1px solid var(--secondary)}.modal-header h2{font-size:1.5rem;font-weight:700}.modal-body{padding:30px}.modal-gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:20px}.modal-item{background:var(--secondary);border-radius:var(--radius-md);overflow:hidden;transition:var(--transition)}.modal-item:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg)}.modal-item img{width:100%;height:180px;object-fit:cover}.modal-item-info{padding:20px}.modal-item-info h4{font-size:1rem;font-weight:600;margin-bottom:8px}.modal-item-info p{color:var(--text-muted);font-size:0.85rem}.modal-item-info .view-link{display:inline-block;margin-top:12px;color:var(--primary);font-weight:600;text-decoration:none}.modal-item-info .view-link:hover{text-decoration:underline}@media(max-width:768px){.hero-content{grid-template-columns:1fr;text-align:center}.nav-menu{display:none}.hamburger{display:flex}.about-content{grid-template-columns:1fr}.timeline-item,.timeline-item:nth-child(even){padding-right:0;padding-left:40px;justify-content:flex-start}.timeline::before{left:20px}.modal-gallery{grid-template-columns:1fr}}
+    
+/* 欢迎页面样式 */
+.welcome-page{position:fixed;top:0;left:0;width:100%;height:100%;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);z-index:9999;display:flex;align-items:center;justify-content:center;transition:all 0.8s ease;overflow:hidden}
+.welcome-page.hidden{opacity:0;pointer-events:none;transform:scale(1.1)}
+.welcome-content{position:relative;text-align:center;color:#fff;z-index:10;padding:20px}
+.welcome-decoration{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none}
+.circle{position:absolute;border-radius:50%;background:rgba(255,255,255,0.1);animation:float 20s infinite ease-in-out}
+.circle-1{width:300px;height:300px;top:-100px;right:-100px;animation-delay:0s}
+.circle-2{width:200px;height:200px;bottom:-50px;left:-50px;animation-delay:5s}
+.circle-3{width:150px;height:150px;top:30%;left:10%;animation-delay:10s}
+@keyframes float{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-30px) rotate(180deg)}}
+.welcome-tag{display:inline-block;padding:8px 20px;background:rgba(255,255,255,0.15);border-radius:30px;font-size:0.85rem;letter-spacing:2px;margin-bottom:30px;backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.2)}
+.welcome-title{font-size:3.5rem;font-weight:900;margin-bottom:20px;line-height:1.2}
+.welcome-title .highlight{background:var(--gradient-accent);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.welcome-subtitle{font-size:1.5rem;margin-bottom:15px;font-weight:300;color:rgba(255,255,255,0.9)}
+.welcome-desc{font-size:1rem;color:rgba(255,255,255,0.7);max-width:500px;margin:0 auto 40px;line-height:1.8}
+.welcome-btn{padding:16px 40px;background:var(--gradient-primary);color:#fff;border:none;border-radius:50px;font-size:1.1rem;font-weight:600;cursor:pointer;transition:var(--transition);box-shadow:0 10px 30px rgba(102,126,234,0.4)}
+.welcome-btn:hover{transform:translateY(-3px);box-shadow:0 15px 40px rgba(102,126,234,0.5)}
+.welcome-scroll{position:absolute;bottom:40px;left:50%;transform:translateX(-50%);cursor:pointer;color:rgba(255,255,255,0.7);font-size:0.9rem}
+.scroll-arrow{font-size:1.5rem;animation:bounce 2s infinite}
+@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(10px)}}
+
+
+/* 履历区块样式 */
+.resume-block{margin-bottom:50px}
+.resume-block-title{font-size:1.5rem;font-weight:700;color:var(--text);margin-bottom:25px;padding-bottom:10px;border-bottom:3px solid var(--primary)}
+.resume-card{background:var(--white);padding:30px;border-radius:var(--radius-lg);box-shadow:var(--shadow-md);margin-bottom:20px;transition:var(--transition);border-left:4px solid var(--primary)}
+.resume-card:hover{box-shadow:var(--shadow-lg);transform:translateX(5px)}
+.resume-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;flex-wrap:wrap;gap:10px}
+.resume-date{display:inline-block;padding:6px 14px;background:var(--gradient-primary);color:#fff;border-radius:20px;font-size:0.85rem;font-weight:600}
+.resume-company{font-size:1.15rem;font-weight:700;color:var(--text);margin:0}
+.resume-role{display:inline-block;padding:6px 16px;background:var(--secondary);color:var(--primary);border-radius:8px;font-size:0.9rem;font-weight:600;margin-bottom:15px}
+.resume-tags{display:flex;gap:10px;margin-bottom:12px}
+.resume-tag{padding:6px 14px;background:var(--gradient-primary);color:#fff;border-radius:20px;font-size:0.85rem;font-weight:600}
+.resume-tag.outline{background:transparent;border:2px solid var(--primary);color:var(--primary)}
+.resume-courses{color:var(--text-light);font-size:0.9rem;line-height:1.8;margin:0}
+.resume-desc{color:var(--text-light);font-size:0.9rem;line-height:1.8}
+.resume-desc p{margin-bottom:10px}
+.resume-desc strong{color:var(--text);font-weight:600}
+
+
+/* 滚动进度条 */
+.scroll-progress{position:fixed;top:0;left:0;width:0;height:4px;background:linear-gradient(90deg,var(--primary),var(--accent-cool),var(--accent));z-index:10000;transition:width 0.1s}
+
+/* 毛玻璃导航栏 */
+.navbar{background:rgba(255,255,255,0.7)!important;backdrop-filter:blur(20px)!important;-webkit-backdrop-filter:blur(20px)!important}
+
+/* 导航栏滚动效果 */
+.navbar.scrolled{background:rgba(255,255,255,0.95)!important;box-shadow:0 5px 30px rgba(0,0,0,0.1)!important}
+
+/* 移动端汉堡菜单 */
+@media(max-width:768px){.nav-menu{position:fixed;top:0;right:-100%;width:70%;height:100vh;background:rgba(255,255,255,0.98);backdrop-filter:blur(20px);flex-direction:column;justify-content:center;align-items:center;gap:30px;transition:right 0.4s ease;box-shadow:-5px 0 30px rgba(0,0,0,0.1)}.nav-menu.active{right:0}.hamburger.active .bar:nth-child(1){transform:rotate(45deg) translate(5px,5px)}.hamburger.active .bar:nth-child(2){opacity:0}.hamburger.active .bar:nth-child(3){transform:rotate(-45deg) translate(7px,-6px)}.hero-content{grid-template-columns:1fr!important;text-align:center!important;padding:100px 20px 60px!important}.hero-title{font-size:2.5rem!important}.skills-grid{grid-template-columns:1fr 1fr!important}.resume-card{flex-direction:column!important}.resume-header{flex-direction:column!important;align-items:flex-start!important}}
+
+/* Hero动画 */
+.hero{background:linear-gradient(135deg,#667eea 0%,#764ba2 50%,#f093fb 100%);animation:gradientShift 15s ease infinite}
+@keyframes gradientShift{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+
+/* 卡片悬浮动画 */
+.portfolio-item{transition:all 0.4s cubic-bezier(0.175,0.885,0.32,1.275)}
+.portfolio-item:hover{transform:translateY(-15px) scale(1.02)}
+
+/* 技能卡片颜色 */
+.skill-card:nth-child(1){border-top-color:#667eea}
+.skill-card:nth-child(2){border-top-color:#f093fb}
+.skill-card:nth-child(3){border-top-color:#4ECDC4}
+.skill-card:nth-child(4){border-top-color:#FF6B6B}
+.skill-card:nth-child(5){border-top-color:#FFD93D}
+
+/* 联系方式卡片 */
+.contact-card{transition:all 0.4s ease}
+.contact-card:hover{background:rgba(255,255,255,0.2);transform:translateY(-10px) scale(1.05)}
+
+/* 滚动动画 */
+.fade-in{opacity:0;transform:translateY(30px);transition:all 0.6s ease}
+.fade-in.visible{opacity:1;transform:translateY(0)}
+
+
+/* 个人信息标签 */
+.personal-info{display:flex;gap:12px;margin:15px 0;flex-wrap:wrap}
+.info-tag{display:inline-block;padding:8px 16px;background:var(--gradient-primary);color:#fff;border-radius:25px;font-size:0.9rem;font-weight:600;box-shadow:0 4px 15px rgba(102,126,234,0.3)}
+
+</style>
+</head>
+<body>
+
+<!-- 欢迎页面 -->
+<div class="welcome-page" id="welcome-page">
+    <div class="welcome-content">
+        <div class="welcome-decoration">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+            <div class="circle circle-3"></div>
+        </div>
+        <div class="welcome-text">
+            <span class="welcome-tag">CREATIVE PORTFOLIO</span>
+            <h1 class="welcome-title">你好，我是<span class="highlight">李颖玲</span></h1>
+            <p class="welcome-subtitle">内容创作 / 活动策划</p>
+            <p class="welcome-desc">专注于文案策划、视频剪辑与线下活动执行，致力于用创意连接品牌与受众</p>
+            <button class="welcome-btn" onclick="enterSite()">探索作品集</button>
+        </div>
+        <div class="welcome-scroll" onclick="enterSite()">
+            <span>向下滚动</span>
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </div>
+</div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">李颖玲</a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">首页</a></li>
+                <li><a href="#about" class="nav-link">关于我</a></li>
+                <li><a href="#experience" class="nav-link">个人履历</a></li>
+                <li><a href="#skills" class="nav-link">专业技能</a></li>
+                <li><a href="#portfolio" class="nav-link">作品集</a></li>
+                <li><a href="#contact" class="nav-link">联系方式</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="hero-badge">CREATIVE PORTFOLIO</span>
+                <h1 class="hero-title">你好，我是<span class="hl">李颖玲</span></h1>
+                <p class="hero-sub">内容创作 / 活动策划</p>
+                <div class="hero-btns">
+                    <a href="#portfolio" class="btn btn-primary">查看作品</a>
+                    <a href="#contact" class="btn btn-secondary">联系我</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="images/portrait.jpg" alt="李颖玲">
+                </div>
+                <div class="about-text">
+                    <h3>关于我</h3>
+                    <p>拥有3年以上创意策划与内容创作经验，擅长公众号推文编写排版、项目方案撰写、产品宣传视频剪辑以及线下会议策划与执行。具备出色的沟通能力和团队协作精神，能够独立完成从创意构思到落地执行的全流程工作。</p>
+                    <div class="personal-info">
+                        <span class="info-tag">年龄：27岁</span>
+                        <span class="info-tag">籍贯：江西南昌</span>
+                    </div>
+                    <ul>
+                        <li>文案策划与排版</li>
+                        <li>视频剪辑与后期制作</li>
+                        <li>线下活动策划与执行</li>
+                        <li>PPT方案设计与制作</li>
+                        <li>公众号运营与推广</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section experience" id="experience">
+        <div class="container">
+            <h2 class="section-title">个人履历</h2>
+            
+            <!-- 教育背景 -->
+            <div class="resume-block">
+                <h3 class="resume-block-title">📚 教育背景</h3>
+                <div class="resume-card">
+                    <div class="resume-header">
+                        <span class="resume-date">2017.09 - 2021.06</span>
+                        <h4 class="resume-company">江西农业大学商学院</h4>
+                    </div>
+                    <div class="resume-tags">
+                        <span class="resume-tag">汉语言专业</span>
+                        <span class="resume-tag outline">本科</span>
+                    </div>
+                    <p class="resume-courses">主修课程：现代汉语、古代汉语、中国古代文学、中国当代文学、美学鉴赏、西方经济学</p>
+                </div>
+            </div>
+
+            <!-- 工作经历 -->
+            <div class="resume-block">
+                <h3 class="resume-block-title">💼 工作经历</h3>
+                
+                <div class="resume-card">
+                    <div class="resume-header">
+                        <span class="resume-date">2024.05 - 2026.05</span>
+                        <h4 class="resume-company">金太阳教育 / 江西风向标教育科技有限公司</h4>
+                    </div>
+                    <span class="resume-role">品牌宣传专员</span>
+                    <div class="resume-desc">
+                        <p><strong>1、产品文案策划</strong></p>
+                        <p>独立撰写 AI 智习室项目策划方案、校企合作合同、产品宣传稿，梳理产品办学增效、数据合规等核心落地优势；搭建公众号内容矩阵，周更 3-4 篇推文，2 小时完成撰稿排版，头条平均阅读 2000+，多篇干货软文阅读破 3000。</p>
+                        <p><strong>2、短视频内容制作</strong></p>
+                        <p>写产品口播脚本，独立剪辑设备操作演示、家长科普、教育会议纪实短视频，可视化呈现智能批改、学情诊断等产品核心功能，适配家校私域传播。</p>
+                        <p><strong>3、线下大型会议全案策划</strong></p>
+                        <p>协助完成全国 / 省级教育行业研讨会工作，负责布展方案、会前H5宣传、现场拍摄、会后宣传推文全链路落地，打造智慧教育产品线下展示标杆案例。</p>
+                        <p><strong>4、PPT 可视化 &amp; 行政工作</strong></p>
+                        <p>熟练运用 Word/Excel/PPT 制作合作方案、产品宣讲、展会策划、工作汇报类 PPT归档 3.24GB 完整项目成果素材；处理部门报销等行政工作。</p>
+                    </div>
+                </div>
+
+                <div class="resume-card">
+                    <div class="resume-header">
+                        <span class="resume-date">2023.07 - 2024.02</span>
+                        <h4 class="resume-company">丛一楼装饰集团</h4>
+                    </div>
+                    <span class="resume-role">文案策划</span>
+                    <div class="resume-desc">
+                        <p><strong>1、主导集团及分公司新媒体矩阵的内容策划与运营</strong></p>
+                        <p>负责公众号推⽂撰写、视觉排版及品牌传播，每周产出3篇⾼质量原创内容，涵盖 企业动态、案例深度解析、客⼾⻅证及营销活动等，单篇推⽂最⾼曝光量达3500+，平均阅读量1500+，粉丝转化率稳定提升；</p>
+                        <p><strong>2、负责分公司营销活动的创意视觉输出</strong></p>
+                        <p>完成宣传海报、活动主KV等品牌物料的⽂案撰写及视觉⻛格把控，强化品牌调性；</p>
+                        <p><strong>3、参与集团级⼤型活动</strong></p>
+                        <p>撰写新闻通稿、领导致辞及主持脚本，确保品牌传播声量及专业形象。</p>
+                    </div>
+                </div>
+
+                <div class="resume-card">
+                    <div class="resume-header">
+                        <span class="resume-date">2022.03 - 2023.03</span>
+                        <h4 class="resume-company">中科纳芯传感科技有限公司</h4>
+                    </div>
+                    <span class="resume-role">行政策划</span>
+                    <div class="resume-desc">
+                        <p>1. 策划并撰写跨平台视频脚本，针对不同受众群体定制化内容⽅案，提升传播精准度与⽤⼾粘性；</p>
+                        <p>2. 负责⾏业深度内容创作与编辑，每周产出3篇专业领域⽂章，经审核后发布⾄企业官⽹；</p>
+                        <p>3. 基于⻜⻦平台数据分析，持续优化视频内容策略，通过版本迭代提升内容转化效果；</p>
+                        <p>4. 统筹展会全流程⼯作，包括前期策划、现场执⾏及后期传播，完成展会报告及新闻稿件撰写，最⼤化活动传播价值。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">专业技能</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">✍️</div>
+                    <h3>文案策划</h3>
+                    <p>品牌文案、项目方案、社交媒体文案、视频脚本撰写</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🎬</div>
+                    <h3>视频剪辑</h3>
+                    <p>Canva、剪映、H5、135公众号编辑器、稿定设计</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">📱</div>
+                    <h3>媒体运营</h3>
+                    <p>微信公众号、百家号、公司官方网站</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🎯</div>
+                    <h3>活动策划</h3>
+                    <p>会议策划、布展方案、现场执行</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🎓</div>
+                    <h3>专业资质</h3>
+                    <p>高中语文教师资格证、英语四级、C1驾驶证</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section portfolio" id="portfolio">
+        <div class="container">
+            <h2 class="section-title">精选作品集</h2>
+            <p class="section-description">点击卡片查看详情</p>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="article">
+                    <div class="portfolio-img"><img src="images/article-cover.png" alt="公众号文章"></div>
+                    <div class="portfolio-info">
+                        <h3>公众号文章</h3>
+                        <p>公众号图文编写排版</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="video">
+                    <div class="portfolio-img"><img src="images/video-cover-new.png" alt="产品视频"></div>
+                    <div class="portfolio-info">
+                        <h3>产品视频</h3>
+                        <p>企业宣传视频、产品介绍视频</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="event">
+                    <div class="portfolio-img"><img src="images/event-cover.png" alt="线下活动"></div>
+                    <div class="portfolio-info">
+                        <h3>线下活动</h3>
+                        <p>策划布展、会议H5、现场拍摄</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="admin">
+                    <div class="portfolio-img"><img src="images/ppt-cover.png" alt="PPT方案"></div>
+                    <div class="portfolio-info">
+                        <h3>PPT方案</h3>
+                        <p>合作方案、工作汇报、项目方案</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="textwork">
+                    <div class="portfolio-img"><img src="images/textwork-cover.png" alt="文字作品"></div>
+                    <div class="portfolio-info">
+                        <h3>文字作品</h3>
+                        <p>文案策划、内容创作、文字编排</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">联系方式</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <h3>电话</h3>
+                    <p>15179150906</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <h3>邮箱</h3>
+                    <p>liyingling421@qq.com</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">💬</div>
+                    <h3>微信</h3>
+                    <p>Erine000</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 李颖玲. 保留所有权利.</p>
+    </footer>
+
+    <div class="modal-overlay" id="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">×</button>
+            <div class="modal-header">
+                <h2 id="modal-title">作品详情</h2>
+            </div>
+            <div class="modal-body">
+                <div class="modal-gallery" id="modal-gallery"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const categoryData = {
+            article: { title: "公众号文章", items: [{img:"images/article1-cover.png",title:"中古法式之家",desc:"室内设计案例分享"},{img:"images/article2-cover.png",title:"数字校本平台",desc:"教育产品介绍"},{img:"images/article3-cover.jpg",title:"教育研讨会",desc:"活动宣传文章"},{img:"images/article4-cover.png",title:"数学公益课",desc:"课程报名推广"}] },
+            video: { title: "产品视频", items: [{img:"images/video-cover.png",title:"产品介绍视频（横版）",desc:"企业宣传视频",link:"https://weixin.qq.com/sph/AFJpXrIecw"},{img:"images/video-cover-2.png",title:"口播视频（软广）",desc:"教育类软广",link:"https://weixin.qq.com/sph/AJpxAOT8a2"},{img:"images/video-cover-3.png",title:"产品宣传（展会用横屏）",desc:"产品更新类",link:"https://weixin.qq.com/sph/ABpz9sQJlE"},{img:"images/video-cover-4.png",title:"线下会议",desc:"结束宣发",link:"https://weixin.qq.com/sph/AuUTs7q6SB"}] },
+            event: { title: "线下活动", items: [{img:"images/h5-cover.png",title:"邀请函H5制作",desc:"民办校研讨会",link:"https://s.eqxiu.com/s/wGTio7ED?bt=yxy&eip=true&share_level=1&from_user=20260814fe0d6916&from_id=a3ab48a9-9&share_time=1786701258239"},{img:"images/event2-cover.jpg",title:"参会指南",desc:"教育创新发展研讨会"},{img:"images/event3-cover.png",title:"研讨会圆满结束",desc:"教育创新研讨会",link:"https://mp.weixin.qq.com/s/ANZrXB3WR3GzdKh5Sbkajw"},{img:"images/manual-cover.png",title:"会务程序手册",desc:"全国中学物理特级教师代表大会"},{img:"images/event-photo-1.jpg",title:"会议现场照片",desc:"现场拍摄精修"}] },
+            admin: { title: "PPT方案", items: [{img:"images/ppt1-cover.png",title:"季度工作汇报PPT",desc:"品牌推广中心"},{img:"images/ppt2-cover.png",title:"产品解决方案PPT",desc:"民办中学高质量发展"},{img:"images/ppt3-cover.png",title:"南昌二中会议布展示意图",desc:"第九届全国中学物理特级教师代表大会"}] },
+            textwork: { title: "文字作品", items: [{img:"images/exhibition-text-cover.png",title:"展厅动线文字版",desc:"丛一楼展厅文字设计"},{img:"images/article-cover.png",title:"企业发展历程",desc:"品牌文化宣传"},{img:"images/manual-cover.png",title:"会务程序手册",desc:"第九届全国中学物理特级教师代表大会"},{img:"images/solution-cover.png",title:"产品解决方案",desc:"新项目解决方案—省市销售版"},{img:"images/instruction-cover.png",title:"产品使用说明",desc:"新项目解决方案—使用说明"},{img:"images/brochure-cover.png",title:"宣传册文字设计及落地效果",desc:"效果图在后页"}] }
+        };
+        function openModal(category) {
+            const data = categoryData[category];
+            if (!data) return;
+            document.getElementById('modal-title').textContent = data.title;
+            const gallery = document.getElementById('modal-gallery');
+            let html = '';
+            data.items.forEach(item => {
+                html += '<div class="modal-item">';
+                html += '<img src="' + item.img + '" alt="' + item.title + '">';
+                html += '<div class="modal-item-info">';
+                html += '<h4>' + item.title + '</h4>';
+                html += '<p>' + item.desc + '</p>';
+                if (item.link) html += '<a href="' + item.link + '" target="_blank" class="view-link">查看 →</a>';
+                html += '</div></div>';
+            });
+            gallery.innerHTML = html;
+            document.getElementById('modal').classList.add('active');
+        }
+        function closeModal() {
+            document.getElementById('modal').classList.remove('active');
+        }
+        document.querySelectorAll('.portfolio-item').forEach(item => {
+            item.addEventListener('click', function() {
+                openModal(this.dataset.category);
+            });
+        });
+        document.getElementById('modal').addEventListener('click', function(e) {
+            if (e.target === this) closeModal();
+        });
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function() {
+                document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+        document.getElementById('hamburger').addEventListener('click', function() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+    
+// 欢迎页面功能
+function enterSite() {
+    document.getElementById('welcome-page').classList.add('hidden');
+    setTimeout(() => {
+        document.getElementById('welcome-page').style.display = 'none';
+    }, 800);
+}
+
+// 点击页面任意位置进入
+document.addEventListener('click', function(e) {
+    if (e.target.closest('.welcome-page') && !e.target.closest('.welcome-btn')) {
+        enterSite();
+    }
+});
+
+// 滚轮进入
+
+// 滚动进度条
+window.addEventListener('scroll', function() {
+    var scrollTop = document.documentElement.scrollTop;
+    var scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrollPercent = (scrollTop / scrollHeight) * 100;
+    document.querySelector('.scroll-progress').style.width = scrollPercent + '%';
+});
+
+// 导航栏滚动效果
+window.addEventListener('scroll', function() {
+    var navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
+
+// 滚动动画
+function reveal() {
+    var reveals = document.querySelectorAll('.fade-in');
+    for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+        if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add('visible');
+        }
+    }
+}
+window.addEventListener('scroll', reveal);
+
+// 为所有section添加动画类
+document.querySelectorAll('.section-title, .about-content, .timeline-item, .skill-card, .portfolio-item, .contact-card').forEach(function(el) {
+    el.classList.add('fade-in');
+});
+reveal();
+
+let scrollCount = 0;
+document.querySelector('.welcome-page').addEventListener('wheel', function() {
+    scrollCount++;
+    if (scrollCount >= 3) enterSite();
+});
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
